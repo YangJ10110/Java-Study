@@ -12,18 +12,23 @@ public class Calculator {
         Scanner int_calc = new Scanner(System.in);
         System.out.println("Add three numbers!!!");
         int i = 0;
+        int count = 1;
         // ArrayList<Int> numbers = new ArrayList<Int>();
         int[] numbers = new int[3];
         
+        System.out.println("Enter Three Numbers ");
 
         while (i < 3) {
-            System.out.println("Enter Number" + i);
+            
+
             int number = int_calc.nextInt();
             numbers[i] = number;
+            count = count + 1;
             i = i+1;
         }
 
         int result = new_calc.sum_3(numbers);
+        System.out.println("Result: ");
         System.out.println(result);
         
     }
