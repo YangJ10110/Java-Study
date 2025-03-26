@@ -1,40 +1,47 @@
 
 import java.util.Scanner;
-import java.util.ArrayList; 
 
 // goal input three numbers in a list 
 // append each with input
 // get each number and add together with sum function
 
-class Calculator {
-    public int sum_3(ArrayList<Int> to_add){
-        int sum = 0
 
-        for (int i: to_add){
-            sum + i
+public class Calculator {
+    public static void main(String[] args) {
+        Summ_3 new_calc = new Summ_3();// <-- To create a new object and to be used on the main class
+        Scanner int_calc = new Scanner(System.in);
+        System.out.println("Add three numbers!!!");
+        int i = 0;
+        // ArrayList<Int> numbers = new ArrayList<Int>();
+        int[] numbers = new int[3];
+        
+
+        while (i < 3) {
+            System.out.println("Enter Number" + i);
+            int number = int_calc.nextInt();
+            numbers[i] = number;
+            i = i+1;
         }
 
+        int result = new_calc.sum_3(numbers);
+        System.out.println(result);
+        
+    }
+}
+
+class Summ_3 {
+    public int sum_3(int[] array){
+        int sum = 0;
+
+        for (int i: array){
+            sum = sum + i;
+        }
+
+        // for (int i=0; i< to_add.length; i++){
+        //     sum + to_add[i];
+        // }
         
         return sum;
     }
 }
 
-public class Main {
-    public static void (String[] args) {
-        Calculator new_calc = new Calculator();// <-- To create a new object and to be used on the main class
-        Scanner int_calc = new Scanner(System.in);
-        System.out.println("Add three numbers!!!")
-        int i = 0
-        ArrayList<Int> numbers = new ArrayList<Int>();
-        
-
-        if (i < 3) {
-            System.out.println("Enter Number" + i);
-            int number = int_calc.nextInt();
-            numbers.add(number)
-        }
-
-        int_calc.sum_3(numbers)
-        
-    }
-}
