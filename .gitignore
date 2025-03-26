@@ -1,0 +1,3 @@
+# Ignore Java class files after compilation
+*.class 
+
