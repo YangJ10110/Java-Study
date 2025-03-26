@@ -1,7 +1,3 @@
-Here’s a completed version of your README with explanations and formatting improvements:  
-
----
-
 # **JAVA IS A WEIRD LANGUAGE**  
 *(COMING FROM A GUY THAT MOSTLY USED PYTHON AND DECLARATIVE LANGUAGES)*  
 
