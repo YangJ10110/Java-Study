@@ -45,5 +45,4 @@ public class Item {
     public String toString(){  // this is runtime polymorphism 
         return "Item: " + name + ", Quantity: " + quantity;
     }
-
 }

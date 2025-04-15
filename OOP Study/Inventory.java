@@ -21,6 +21,16 @@ public class Inventory {
         items.add(item);
     }
 
+    // Overloading is using the same method and additional parameters, actions to it 
+
+    public void addItem(String name, int quantity, String type){
+  
+
+        Fruit fruit = new Fruit(name, quantity, type);
+        items.add(fruit);
+
+    }
+
     public void displayInventory(){
         for (Item item : items) {
             System.out.println(item.toString());
