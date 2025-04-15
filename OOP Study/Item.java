@@ -27,7 +27,8 @@ public class Item {
     // Getters are used to get the value of an attribute
     // Setters are used to set the value of an attribute
 
-    public Item(String name, int quantity) {
+
+    public Item(String name, int quantity) { //This is a constructor
         this.name = name;
         this. quantity = quantity;
     }
@@ -38,6 +39,11 @@ public class Item {
 
     public int getQuantity() {
         return quantity;
+    }
+
+    @Override
+    public String toString(){  // this is runtime polymorphism 
+        return "Item: " + name + ", Quantity: " + quantity;
     }
 
 }
